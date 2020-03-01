@@ -95,7 +95,7 @@ Winning=()=>{
       <div>
         <h1>Riddle Me This</h1>
     <h3 id="score">questions: {this.state.counter+1}/{this.state.question.length}</h3>
-    <h3 id="counter">Wrong attempts: {this.state.errorCounter}/5</h3>
+    <h3 id="counter">Wrong attempts: {this.state.errorCounter}/3</h3>
         <div className="riddle-container">
     <p>"{this.state.question[this.state.counter]}"</p>
     <div className="word">{this.state.answer[this.state.counter].map(element=>(
@@ -106,7 +106,7 @@ Winning=()=>{
         </div>))}</div>
       </div> 
       
-      <div  style={  (this.state.wrongLetters.length>4 || (this.rightAnswer()))?  {display:"none"}: {display:"grid"}} className="guessing-letters">
+      <div  style={  (this.state.wrongLetters.length>2 || (this.rightAnswer()))?  {display:"none"}: {display:"grid"}} className="guessing-letters">
       {this.state.letters[this.state.counter].map(element=>(
       <div className="letters" style={this.state.visibility===false && (this.state.wrongLetters.includes(element) || this.state.rightLetters.includes(element)) ? {display:"none"}:{display:"initial"}}  onClick={((e) => this.testfunction(e, element))} key={element}>{element}</div>))}
       </div>
@@ -115,12 +115,12 @@ Winning=()=>{
       <button onClick={this.nextRiddle}  id="next-riddle-button" type="button"> Next Riddle  </button>
       </section>
       
-      <section  className="losing-section" style={this.state.wrongLetters.length>4? {display:"block"}: {display:"none"}}>
+      <section  className="losing-section" style={this.state.wrongLetters.length>2? {display:"block"}: {display:"none"}}>
       <h1 id="you-lost" >YOU LOST :(</h1>
         <button onClick={this.tryagain} id="try-again-button" type="button">Try Again  </button>
       </section>
 
-      <section class="Winner" style={this.Winning()? {display:"initial"}:{display:"none"}}>
+      <section className="Winner" style={this.Winning()? {display:"initial"}:{display:"none"}}>
         <h3 id="you-won">YOU HAVE WON</h3>
       </section>
  

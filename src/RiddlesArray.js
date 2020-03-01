@@ -22,14 +22,52 @@ const Riddles=[
         question:"What has many keys but can’t open a single lock?",
         answer:[{id:1, letter:"P"},{id:2, letter:"I"},{id:3, letter:"A"},{id:4, letter:"N"},{id:5, letter:"O"}],
         letters:["L","C","T","I","E","N","G","A","P","F","O","M"]
+    },
+    //Riddle 5
+    {
+        question:"I’m light as a feather, yet the strongest person can’t hold me for five minutes. What am I?",
+        answer:[{id:1, letter:"B"},{id:2, letter:"R"},{id:3, letter:"E"},{id:4, letter:"A"},{id:5, letter:"T"},{id:6, letter:"H"}],
+        letters:["F","H","Q","Y","R","B","A","K","M","E","T","U"]
+    },
+    //Riddle 6 
+    {
+      question:"What is always in front of you but can’t be seen?",
+      answer:[{id:1, letter:"F"},{id:2, letter:"U"},{id:3, letter:"T"},{id:4, letter:"U"},{id:5, letter:"R"},{id:6, letter:"E"}],
+      letters:["J","D","U","Y","T","R","A","G","I","E","T","F"]
+    },
+    //Riddle 7 
+    {
+        question:"If you’ve got me, you want to share me; if you share me, you haven’t kept me. What am I?",
+        answer:[{id:1, letter:"S"},{id:2, letter:"E"},{id:3, letter:"C"},{id:4, letter:"R"},{id:5, letter:"E"},{id:6, letter:"T"}],
+        letters:["E","H","S","T","W","B","A","K","M","C","O","R"]
+    },
+    //Riddle 8 
+    {
+        question:" What gets bigger when more is taken away?",
+        answer:[{id:1, letter:"H"},{id:2, letter:"O"},{id:3, letter:"L"},{id:4, letter:"E"}],
+        letters:["P","O","Q","L","R","E","A","H","M","E","J","S"]
+    },
+    //Riddle 9 --modify it
+    {
+        question:"I’m found in socks, scarves and mittens; and often in the paws of playful kittens. What am I?",
+        answer:[{id:1, letter:"Y"},{id:2, letter:"A"},{id:3, letter:"R"},{id:4, letter:"N"}],
+        letters:["Z","S","U","N","R","L","A","W","Y","C","F","G"]
+    },
+    //Riddle 10 --modify it
+    {
+        question:" What has hands, but can’t clap?",
+        answer:[{id:1, letter:"C"},{id:2, letter:"L"},{id:3, letter:"O"},{id:4, letter:"C"},{id:5, letter:"K"}],
+        letters:["O","B","V","Y","L","S","A","K","N","C","A","P"]
     }
+    
+    
     
 ]
 
 const questionsArr=Riddles.map(riddle=>(riddle.question))
 
 const answersArr=Riddles.map(riddle=>(riddle.answer))
-
+console.log(answersArr)
 
 const lettersArr=Riddles.map(riddle=>(riddle.letters))
 
