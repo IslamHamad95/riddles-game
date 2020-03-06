@@ -121,7 +121,7 @@ Winning=()=>{
       </section>
 
       <section className="Winner" style={this.Winning()? {display:"initial"}:{display:"none"}}>
-        <h3 id="you-won">YOU HAVE WON</h3>
+        <h3 id="you-won">YOU DID IT! YOU WON</h3>
       </section>
  
       </div>
